@@ -38,7 +38,8 @@ export default function HomeScreen() {
             top: position.y,
             width: 100,
             height: 100,
-            backgroundColor: 'blue',
+            borderWidth: 1,
+            borderColor: 'white',
           }}
         />
       ))}
