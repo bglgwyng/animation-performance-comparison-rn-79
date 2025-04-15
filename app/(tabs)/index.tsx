@@ -1,9 +1,5 @@
-import { Image, StyleSheet, Platform, View, Animated } from 'react-native';
+import { StyleSheet, View, Animated } from 'react-native';
 
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
 import { times } from 'ramda';
 import { useEffect } from 'react';
 
