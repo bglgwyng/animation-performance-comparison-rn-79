@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03C369896AD339D351527F92 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDD99F8A1EBD892AC03D2C /* ExpoModulesProvider.swift */; };
-		0AED8720A6920D2B48A1D06C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 710CCCA474A9BEAA96A997AA /* PrivacyInfo.xcprivacy */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		3063ED0CEFFFB0682D464BE8 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEC51E5C1DC3D91BAC89B0 /* ExpoModulesProvider.swift */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		724E95B41940060228EC34FA /* libPods-animationperformancecomparisonrn79.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2258573135443003DF2B09C /* libPods-animationperformancecomparisonrn79.a */; };
+		842AD0151AF02D9C70026D95 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 9DD12D01AEE1D2174989A3D8 /* PrivacyInfo.xcprivacy */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
+		F206ADF294E00DB86E1AE0F1 /* libPods-animationperformancecomparisonrn79.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 799A6311748A21316D8541D7 /* libPods-animationperformancecomparisonrn79.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13B07F961A680F5B00A75B9A /* animationperformancecomparisonrn79.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animationperformancecomparisonrn79.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = animationperformancecomparisonrn79/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = animationperformancecomparisonrn79/Info.plist; sourceTree = "<group>"; };
-		710CCCA474A9BEAA96A997AA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = animationperformancecomparisonrn79/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		78FDD99F8A1EBD892AC03D2C /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-animationperformancecomparisonrn79/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		799A6311748A21316D8541D7 /* libPods-animationperformancecomparisonrn79.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-animationperformancecomparisonrn79.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DD12D01AEE1D2174989A3D8 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = animationperformancecomparisonrn79/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = animationperformancecomparisonrn79/SplashScreen.storyboard; sourceTree = "<group>"; };
+		AE7B20C7FAB645F96B046F1E /* Pods-animationperformancecomparisonrn79.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animationperformancecomparisonrn79.release.xcconfig"; path = "Target Support Files/Pods-animationperformancecomparisonrn79/Pods-animationperformancecomparisonrn79.release.xcconfig"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		C81C137F792F23AB6707ECE5 /* Pods-animationperformancecomparisonrn79.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animationperformancecomparisonrn79.debug.xcconfig"; path = "Target Support Files/Pods-animationperformancecomparisonrn79/Pods-animationperformancecomparisonrn79.debug.xcconfig"; sourceTree = "<group>"; };
-		E15438F7A02AE1D009D509F2 /* Pods-animationperformancecomparisonrn79.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animationperformancecomparisonrn79.release.xcconfig"; path = "Target Support Files/Pods-animationperformancecomparisonrn79/Pods-animationperformancecomparisonrn79.release.xcconfig"; sourceTree = "<group>"; };
-		E2258573135443003DF2B09C /* libPods-animationperformancecomparisonrn79.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-animationperformancecomparisonrn79.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DEC51E5C1DC3D91BAC89B0 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-animationperformancecomparisonrn79/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		DF7AF2B03A56E5E0031E71CE /* Pods-animationperformancecomparisonrn79.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animationperformancecomparisonrn79.debug.xcconfig"; path = "Target Support Files/Pods-animationperformancecomparisonrn79/Pods-animationperformancecomparisonrn79.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = animationperformancecomparisonrn79/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* animationperformancecomparisonrn79-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "animationperformancecomparisonrn79-Bridging-Header.h"; path = "animationperformancecomparisonrn79/animationperformancecomparisonrn79-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				724E95B41940060228EC34FA /* libPods-animationperformancecomparisonrn79.a in Frameworks */,
+				F206ADF294E00DB86E1AE0F1 /* libPods-animationperformancecomparisonrn79.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +53,7 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				710CCCA474A9BEAA96A997AA /* PrivacyInfo.xcprivacy */,
+				9DD12D01AEE1D2174989A3D8 /* PrivacyInfo.xcprivacy */,
 			);
 			name = animationperformancecomparisonrn79;
 			sourceTree = "<group>";
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				E2258573135443003DF2B09C /* libPods-animationperformancecomparisonrn79.a */,
+				799A6311748A21316D8541D7 /* libPods-animationperformancecomparisonrn79.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -81,8 +81,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				A9E74C7FEC61459EBC0C7409 /* Pods */,
-				EB52C3220F0227123DE6FE6C /* ExpoModulesProviders */,
+				8E54494EA3FB6A15A99ECC63 /* Pods */,
+				DEB6BC9E8A4969AF1421D771 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -97,11 +97,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A9E74C7FEC61459EBC0C7409 /* Pods */ = {
+		8E54494EA3FB6A15A99ECC63 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C81C137F792F23AB6707ECE5 /* Pods-animationperformancecomparisonrn79.debug.xcconfig */,
-				E15438F7A02AE1D009D509F2 /* Pods-animationperformancecomparisonrn79.release.xcconfig */,
+				DF7AF2B03A56E5E0031E71CE /* Pods-animationperformancecomparisonrn79.debug.xcconfig */,
+				AE7B20C7FAB645F96B046F1E /* Pods-animationperformancecomparisonrn79.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -116,18 +116,18 @@
 			path = animationperformancecomparisonrn79/Supporting;
 			sourceTree = "<group>";
 		};
-		E566DA925DF72042DD1DDB90 /* animationperformancecomparisonrn79 */ = {
+		CB92B061EC795653C8F9F404 /* animationperformancecomparisonrn79 */ = {
 			isa = PBXGroup;
 			children = (
-				78FDD99F8A1EBD892AC03D2C /* ExpoModulesProvider.swift */,
+				D9DEC51E5C1DC3D91BAC89B0 /* ExpoModulesProvider.swift */,
 			);
 			name = animationperformancecomparisonrn79;
 			sourceTree = "<group>";
 		};
-		EB52C3220F0227123DE6FE6C /* ExpoModulesProviders */ = {
+		DEB6BC9E8A4969AF1421D771 /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
-				E566DA925DF72042DD1DDB90 /* animationperformancecomparisonrn79 */,
+				CB92B061EC795653C8F9F404 /* animationperformancecomparisonrn79 */,
 			);
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
@@ -140,13 +140,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "animationperformancecomparisonrn79" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				AD7B9F57B920CAB933DB96FE /* [Expo] Configure project */,
+				31F4F7BD5B8A69869F37DB33 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				684F3E66A8CF1747EB7CF153 /* [CP] Embed Pods Frameworks */,
+				6C31D5E2C6F4FAE7C2F3A087 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,8 +166,8 @@
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 69P5794YSK;
 						LastSwiftMigration = 1250;
+						DevelopmentTeam = "69P5794YSK";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -198,7 +198,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				0AED8720A6920D2B48A1D06C /* PrivacyInfo.xcprivacy in Resources */,
+				842AD0151AF02D9C70026D95 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +242,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		684F3E66A8CF1747EB7CF153 /* [CP] Embed Pods Frameworks */ = {
+		31F4F7BD5B8A69869F37DB33 /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-animationperformancecomparisonrn79/expo-configure-project.sh\"\n";
+		};
+		6C31D5E2C6F4FAE7C2F3A087 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -294,25 +313,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-animationperformancecomparisonrn79/Pods-animationperformancecomparisonrn79-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AD7B9F57B920CAB933DB96FE /* [Expo] Configure project */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[Expo] Configure project";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-animationperformancecomparisonrn79/expo-configure-project.sh\"\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -321,7 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				03C369896AD339D351527F92 /* ExpoModulesProvider.swift in Sources */,
+				3063ED0CEFFFB0682D464BE8 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,15 +330,12 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C81C137F792F23AB6707ECE5 /* Pods-animationperformancecomparisonrn79.debug.xcconfig */;
+			baseConfigurationReference = DF7AF2B03A56E5E0031E71CE /* Pods-animationperformancecomparisonrn79.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = animationperformancecomparisonrn79/animationperformancecomparisonrn79.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 69P5794YSK;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -364,20 +361,20 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
+				DEVELOPMENT_TEAM = "69P5794YSK";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E15438F7A02AE1D009D509F2 /* Pods-animationperformancecomparisonrn79.release.xcconfig */;
+			baseConfigurationReference = AE7B20C7FAB645F96B046F1E /* Pods-animationperformancecomparisonrn79.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = animationperformancecomparisonrn79/animationperformancecomparisonrn79.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 69P5794YSK;
 				INFOPLIST_FILE = animationperformancecomparisonrn79/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -397,6 +394,9 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
+				DEVELOPMENT_TEAM = "69P5794YSK";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 			};
 			name = Release;
 		};

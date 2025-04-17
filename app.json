@@ -7,7 +7,7 @@
     "icon": "./assets/images/icon.png",
     "scheme": "animationperformancecomparisonrn79",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.bglgwyng.animationperformancecomparisonrn79"
