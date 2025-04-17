@@ -1,47 +1,64 @@
-import { StyleSheet, View, Animated } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Reanimated, { useSharedValue, useAnimatedStyle, withTiming, SharedValue, makeMutable } from 'react-native-reanimated';
 
 import { times } from 'ramda';
 import { useEffect } from 'react';
 
-const positions = times(() => new Animated.ValueXY({x: 0, y: 0}))(100)
+// Create an array of 100 position objects, each with shared values for x and y
+const positions = times(() => ({
+  x: makeMutable(0),
+  y: makeMutable(0)
+}))(200)
 export default function HomeScreen() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      Animated.parallel(positions.map(position => Animated.timing(position, {
-        toValue: {
-          x: Math.random() * 500,
-          y: Math.random() * 500,
-        },
-        duration: 100,
-        useNativeDriver: false,
-      }))).start();
-    
+      // Update each position with new random values
+      positions.forEach(position => {
+        position.x.value = withTiming(Math.random() * 500, { duration: 100 });
+        position.y.value = withTiming(Math.random() * 500, { duration: 100 });
+      });
     }, 100);
 
     return () => clearInterval(interval);
-  })
+  }, [])
   
   
   return (
     <View style={{flex: 1}}>
       {positions.map((position, index) => (
-        <Animated.View
-          key={index}
-          style={{
-            position: 'absolute',
-            left: position.x,
-            top: position.y,
-            width: 100,
-            height: 100,
-            borderWidth: 1,
-            borderColor: 'white',
-          }}
+        <AnimatedBox 
+          key={index} 
+          x={position.x} 
+          y={position.y} 
         />
       ))}
     </View>
   );
 }
+
+// Animated Box Component
+type AnimatedBoxProps = {
+  x: SharedValue<number>;
+  y: SharedValue<number>;
+};
+
+const AnimatedBox = ({ x, y }: AnimatedBoxProps) => {
+  // Create animated style for the box
+  const animatedStyle = useAnimatedStyle(() => {
+    return {
+      position: 'absolute',
+      left: x.value,
+      top: y.value,
+      width: 100,
+      height: 100,
+      borderWidth: 1,
+      borderColor: 'red',
+    };
+  });
+
+  return <Reanimated.View style={animatedStyle} />;
+};
 
 const styles = StyleSheet.create({
   titleContainer: {
