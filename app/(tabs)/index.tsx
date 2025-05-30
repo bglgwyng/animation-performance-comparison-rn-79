@@ -1,40 +1,45 @@
-import { StyleSheet, View } from 'react-native';
-import Reanimated, { useSharedValue, useAnimatedStyle, withTiming, SharedValue, makeMutable } from 'react-native-reanimated';
+import { Button, StyleSheet, View } from 'react-native';
+import Reanimated, { useSharedValue, useAnimatedStyle, withTiming, SharedValue, makeMutable, SlideInDown, SlideOutLeft, LayoutAnimationFunction, EntryExitAnimationFunction, SlideOutRight } from 'react-native-reanimated';
 
 import { times } from 'ramda';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import Animated from 'react-native-reanimated';
 
-// Create an array of 100 position objects, each with shared values for x and y
-const positions = times(() => ({
-  x: makeMutable(0),
-  y: makeMutable(0)
-}))(200)
-export default function HomeScreen() {
+// Create an array of 100 position o
+export default function HomeScreen() {  
+  const [state, setState] = useState(true);
+  const animationState = useSharedValue(true);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      // Update each position with new random values
-      positions.forEach(position => {
-        position.x.value = withTiming(Math.random() * 500, { duration: 100 });
-        position.y.value = withTiming(Math.random() * 500, { duration: 100 });
-      });
-    }, 100);
-
-    return () => clearInterval(interval);
-  }, [])
-  
   
   return (
-    <View style={{flex: 1}}>
-      {positions.map((position, index) => (
-        <AnimatedBox 
-          key={index} 
-          x={position.x} 
-          y={position.y} 
-        />
-      ))}
+    <View style={{flex: 1, alignItems:"center", justifyContent:"center"}}>
+      {state && <Animated.View exiting={createConditionalLayoutAnimation(SlideOutLeft.build(), SlideOutRight.build(), animationState)} style={{width:100,height: 100, backgroundColor:"red"}} />}
+      <Button
+        title="toggle render"
+        onPress={() => {
+          setState((x) => !x);
+        }}
+      />
+      <Button
+        title="toggle animation"
+        onPress={() => {
+          animationState.value = !animationState.value;
+        }}
+      />
     </View>
   );
+}
+
+function createConditionalLayoutAnimation(
+  animation1: EntryExitAnimationFunction,
+  animation2: EntryExitAnimationFunction,
+  condition: SharedValue<boolean>,
+): EntryExitAnimationFunction {
+  return (values) => {
+    "worklet";
+
+    return condition.value ? animation1(values) : animation2(values);
+  };
 }
 
 // Animated Box Component
